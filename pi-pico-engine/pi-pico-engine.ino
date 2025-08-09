@@ -86,6 +86,7 @@ bool loadFEN(const String& fen){
   for(int i=0;i<128;i++) if(!off(i)) board[i]=EMPTY;
   castle=0; ep_sq=-1; halfmove=0; fullmove=1;
   kingSq[0]=kingSq[1]=-1;
+  histPly = 0; // reset move history when loading a new position
 
   int i=0, sq=idx(0,7);
   while(i<fen.length()){
@@ -272,9 +273,9 @@ bool makeMove(const Move&m){
       }
     }
     castle=h.oldCastle; ep_sq=h.oldEp; halfmove=h.oldHalf;
+    histPly--; // undo history pointer on illegal move
     return false;
   }
-  histPly--;
   return true;
 }
 
