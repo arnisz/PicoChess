@@ -3,6 +3,18 @@
 History history[128];
 int histPly=0;
 
+unsigned long stopTime;
+bool stopSearch=false;
+
+inline bool timeCheck(){
+  if(stopSearch) return true;
+  if(platformMillis() >= stopTime){
+    stopSearch = true;
+    return true;
+  }
+  return false;
+}
+
 bool makeMove(const Move &m){
   History &h = history[histPly];
   h.m = m; h.castle = castle; h.ep = enpassant; h.half = halfmove;
@@ -81,6 +93,7 @@ void unmakeMove(){
 }
 
 int quiesce(int alpha,int beta){
+  if(timeCheck()) return alpha;
   int stand = evaluate();
   if(stand >= beta) return beta;
   if(stand > alpha) alpha = stand;
@@ -91,6 +104,7 @@ int quiesce(int alpha,int beta){
     if(!makeMove(list.moves[i])) continue;
     int score = -quiesce(-beta, -alpha);
     unmakeMove();
+    if(stopSearch) return alpha;
     if(score >= beta) return beta;
     if(score > alpha) alpha = score;
   }
@@ -98,6 +112,7 @@ int quiesce(int alpha,int beta){
 }
 
 int search(int depth,int alpha,int beta){
+  if(timeCheck()) return alpha;
   if(depth==0) return quiesce(alpha,beta);
   MoveList list; generateMoves(list);
   if(list.count==0){
@@ -109,22 +124,46 @@ int search(int depth,int alpha,int beta){
     if(!makeMove(m)) continue;
     int score = -search(depth-1, -beta, -alpha);
     unmakeMove();
+    if(stopSearch) return alpha;
     if(score >= beta) return beta;
     if(score > alpha) alpha = score;
   }
   return alpha;
 }
 
-Move think(int depth){
+Move thinkDepth(int depth){
+  stopSearch=false;
+  stopTime = platformMillis() + 1000000UL;
   Move best={0};
   int bestScore=-32000;
   MoveList list; generateMoves(list);
-  for(int d=1; d<=depth; d++){
-    for(int i=0;i<list.count;i++){
+  for(int d=1; d<=depth && !stopSearch; d++){
+    for(int i=0;i<list.count && !stopSearch;i++){
       Move m = list.moves[i];
       if(!makeMove(m)) continue;
       int sc = -search(d-1, -32000, 32000);
       unmakeMove();
+      if(stopSearch) break;
+      if(sc>bestScore){ bestScore=sc; best=m; }
+    }
+  }
+  if(best.from==0 && best.to==0 && list.count>0) best=list.moves[0];
+  return best;
+}
+
+Move thinkTime(int milliseconds){
+  stopSearch=false;
+  stopTime = platformMillis() + milliseconds;
+  MoveList list; generateMoves(list);
+  Move best = list.count>0 ? list.moves[0] : Move{0};
+  int bestScore=-32000;
+  for(int d=1; !stopSearch; d++){
+    for(int i=0;i<list.count && !stopSearch;i++){
+      Move m = list.moves[i];
+      if(!makeMove(m)) continue;
+      int sc = -search(d-1, -32000, 32000);
+      unmakeMove();
+      if(stopSearch) break;
       if(sc>bestScore){ bestScore=sc; best=m; }
     }
   }
@@ -151,13 +190,42 @@ void parsePosition(const String& s){
   }
 }
 
-void goCommand(const String& s){
-  int p=s.indexOf("depth "); int d=3; if(p>=0){ d=s.substring(p+6).toInt(); if(d<=0) d=3; }
-  Move bm=think(d); char buf[6];
+int extractInt(const String& s,const String& key){
+  int p=s.indexOf(key+" ");
+  if(p<0) return -1;
+  int start=p+key.length()+1;
+  String tail=s.substring(start);
+  int space=tail.indexOf(" ");
+  int end=(space<0)?s.length():start+space;
+  return s.substring(start,end).toInt();
+}
+
+int computeMoveTime(const String& s){
+  int mtg=extractInt(s,"movestogo");
+  int wtime=extractInt(s,"wtime");
+  int btime=extractInt(s,"btime");
+  int available = side==WHITE ? wtime : btime;
+  if(available<=0) return 1000;
+  if(mtg>0) available /= mtg;
+  else available /= 30;
+  if(available<10) available=10;
+  return available;
+}
+
+void sendBestMove(const Move& bm){
+  char buf[6];
   int f1=bm.from%8, r1=bm.from/8, f2=bm.to%8, r2=bm.to/8;
   buf[0]='a'+f1; buf[1]='1'+r1; buf[2]='a'+f2; buf[3]='1'+r2;
-  if(bm.flags & 16) { buf[4]='q'; buf[5]=0; } else buf[4]=0;
+  if(bm.flags & 16){ buf[4]='q'; buf[5]=0; } else buf[4]=0;
   Serial.print("bestmove "); Serial.println(buf);
+}
+
+void goCommand(const String& s){
+  int d=extractInt(s,"depth");
+  Move bm;
+  if(d>0) bm=thinkDepth(d);
+  else bm=thinkTime(computeMoveTime(s));
+  sendBestMove(bm);
 }
 
 void initEngine(){
