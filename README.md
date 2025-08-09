@@ -1,4 +1,4 @@
 # my-new-project
 
-Pico CHess Engine
+Pico Chess Engine
 
