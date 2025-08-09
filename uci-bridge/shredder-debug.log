@@ -1,0 +1,442 @@
+2025/08/09 15:00:03 [DEBUG 15:00:03.449] Config: Log file set to shredder-debug.log
+2025/08/09 15:00:03 [DEBUG 15:00:03.449] Config loaded successfully from: bridge.config
+2025/08/09 15:00:03 [DEBUG 15:00:03.449] Starting UCI Bridge for Pi Pico Chess Engine
+2025/08/09 15:00:03 [DEBUG 15:00:03.449] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:00:03 [DEBUG 15:00:03.449] === CONNECTING TO PICO ===
+2025/08/09 15:00:03 [DEBUG 15:00:03.449] Attempting to connect to COM15 at 115200 baud
+2025/08/09 15:00:03 [DEBUG 15:00:03.449] Connection attempt 1/3
+2025/08/09 15:00:03 [DEBUG 15:00:03.450] Successfully connected to COM15
+2025/08/09 15:00:03 [DEBUG 15:00:03.560] === CONNECTION ESTABLISHED ===
+2025/08/09 15:00:03 [DEBUG 15:00:03.560] UCI Bridge started successfully
+2025/08/09 15:00:03 [DEBUG 15:00:03.560] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:00:03 [DEBUG 15:00:03.560] GUI -> Bridge: uci
+2025/08/09 15:00:03 [DEBUG 15:00:03.560] === UCI INITIALIZATION START ===
+2025/08/09 15:00:03 [DEBUG 15:00:03.560] Bridge -> Pico: uci
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] Pico -> Bridge: id name PicoChess
+id author Arnold
+uciok
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] Pico UCI response: id name PicoChess
+id author Arnold
+uciok
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] Bridge -> GUI: id name PicoChess
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] Bridge -> GUI: id author arnisz
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] Bridge -> GUI: option name Skill Level type spin default 10 min 1 max 20
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] Bridge -> GUI: option name Move Overhead type spin default 100 min 0 max 1000
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] Bridge -> GUI: uciok
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] === UCI INITIALIZATION COMPLETE ===
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] GUI -> Bridge: quit
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] === QUIT COMMAND ===
+2025/08/09 15:00:03 [DEBUG 15:00:03.571] Bridge -> Pico: quit
+2025/08/09 15:00:03 [DEBUG 15:00:03.672] Received quit command, exiting gracefully
+2025/08/09 15:00:32 [DEBUG 15:00:32.660] Config: Log file set to shredder-debug.log
+2025/08/09 15:00:32 [DEBUG 15:00:32.660] Config loaded successfully from: bridge.config
+2025/08/09 15:00:32 [DEBUG 15:00:32.660] Starting UCI Bridge for Pi Pico Chess Engine
+2025/08/09 15:00:32 [DEBUG 15:00:32.660] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:00:32 [DEBUG 15:00:32.660] === CONNECTING TO PICO ===
+2025/08/09 15:00:32 [DEBUG 15:00:32.660] Attempting to connect to COM15 at 115200 baud
+2025/08/09 15:00:32 [DEBUG 15:00:32.660] Connection attempt 1/3
+2025/08/09 15:00:32 [DEBUG 15:00:32.661] Successfully connected to COM15
+2025/08/09 15:00:32 [DEBUG 15:00:32.762] === CONNECTION ESTABLISHED ===
+2025/08/09 15:00:32 [DEBUG 15:00:32.762] UCI Bridge started successfully
+2025/08/09 15:00:32 [DEBUG 15:00:32.762] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:00:32 [DEBUG 15:00:32.762] GUI -> Bridge: uci
+2025/08/09 15:00:32 [DEBUG 15:00:32.762] === UCI INITIALIZATION START ===
+2025/08/09 15:00:32 [DEBUG 15:00:32.762] Bridge -> Pico: uci
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] Pico -> Bridge: id name PicoChess
+id author Arnold
+uciok
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] Pico UCI response: id name PicoChess
+id author Arnold
+uciok
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] Bridge -> GUI: id name PicoChess
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] Bridge -> GUI: id author arnisz
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] Bridge -> GUI: option name Skill Level type spin default 10 min 1 max 20
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] Bridge -> GUI: option name Move Overhead type spin default 100 min 0 max 1000
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] Bridge -> GUI: uciok
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] === UCI INITIALIZATION COMPLETE ===
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] GUI -> Bridge: isready
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] === ISREADY CHECK ===
+2025/08/09 15:00:32 [DEBUG 15:00:32.773] Bridge -> Pico: isready
+2025/08/09 15:00:32 [DEBUG 15:00:32.784] Pico -> Bridge: readyok
+2025/08/09 15:00:32 [DEBUG 15:00:32.784] Pico ready check completed
+2025/08/09 15:00:32 [DEBUG 15:00:32.784] Bridge -> GUI: readyok
+2025/08/09 15:00:32 [DEBUG 15:00:32.784] === ISREADY COMPLETE ===
+2025/08/09 15:00:40 [DEBUG 15:00:40.089] GUI -> Bridge: ucinewgame
+2025/08/09 15:00:40 [DEBUG 15:00:40.090] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:00:40 [DEBUG 15:00:40.090] Bridge -> Pico: ucinewgame
+2025/08/09 15:00:40 [DEBUG 15:00:40.090] GUI -> Bridge: isready
+2025/08/09 15:00:40 [DEBUG 15:00:40.090] === ISREADY CHECK ===
+2025/08/09 15:00:40 [DEBUG 15:00:40.090] Bridge -> Pico: isready
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] Pico -> Bridge: readyok
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] Pico ready check completed
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] Bridge -> GUI: readyok
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] === ISREADY COMPLETE ===
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] GUI -> Bridge: position startpos moves d2d4 e7e5 d4e5 b8c6
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] === OTHER COMMAND: position startpos moves d2d4 e7e5 d4e5 b8c6 ===
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] Bridge -> Pico: position startpos moves d2d4 e7e5 d4e5 b8c6
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:00:40 [DEBUG 15:00:40.102] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:00:40 [DEBUG 15:00:40.301] Pico -> Bridge: bc2c4
+2025/08/09 15:00:40 [DEBUG 15:00:40.301] Bridge -> GUI: bc2c4
+2025/08/09 15:00:42 [DEBUG 15:00:42.314] Pico -> Bridge: estmove
+2025/08/09 15:00:42 [DEBUG 15:00:42.314] Bridge -> GUI: estmove
+2025/08/09 15:01:10 [DEBUG 15:01:10.102] Go timeout after 30s - sending fallback move
+2025/08/09 15:01:10 [DEBUG 15:01:10.102] Bridge -> GUI: bestmove e2e4
+2025/08/09 15:01:10 [DEBUG 15:01:10.102] === GO COMMAND COMPLETE ===
+2025/08/09 15:01:55 [DEBUG 15:01:55.759] GUI -> Bridge: position startpos moves d2d4 e7e5 d4e5 b8c6 e2e4 c6e5 g1f3 f8b4
+2025/08/09 15:01:55 [DEBUG 15:01:55.760] === OTHER COMMAND: position startpos moves d2d4 e7e5 d4e5 b8c6 e2e4 c6e5 g1f3 f8b4 ===
+2025/08/09 15:01:55 [DEBUG 15:01:55.760] Bridge -> Pico: position startpos moves d2d4 e7e5 d4e5 b8c6 e2e4 c6e5 g1f3 f8b4
+2025/08/09 15:01:55 [DEBUG 15:01:55.760] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:01:55 [DEBUG 15:01:55.760] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:01:55 [DEBUG 15:01:55.760] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:01:55 [DEBUG 15:01:55.796] Pico -> Bridge: estmove b1d2
+2025/08/09 15:01:55 [DEBUG 15:01:55.796] Bridge -> GUI: estmove b1d2
+2025/08/09 15:01:57 [DEBUG 15:01:57.810] Pico -> Bridge: b
+2025/08/09 15:01:57 [DEBUG 15:01:57.810] Bridge -> GUI: b
+2025/08/09 15:02:25 [DEBUG 15:02:25.760] Go timeout after 30s - sending fallback move
+2025/08/09 15:02:25 [DEBUG 15:02:25.760] Bridge -> GUI: bestmove e2e4
+2025/08/09 15:02:25 [DEBUG 15:02:25.760] === GO COMMAND COMPLETE ===
+2025/08/09 15:03:19 [DEBUG 15:03:19.870] GUI -> Bridge: ucinewgame
+2025/08/09 15:03:19 [DEBUG 15:03:19.870] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:03:19 [DEBUG 15:03:19.870] Bridge -> Pico: ucinewgame
+2025/08/09 15:03:19 [DEBUG 15:03:19.870] GUI -> Bridge: isready
+2025/08/09 15:03:19 [DEBUG 15:03:19.870] === ISREADY CHECK ===
+2025/08/09 15:03:19 [DEBUG 15:03:19.870] Bridge -> Pico: isready
+2025/08/09 15:03:19 [DEBUG 15:03:19.880] Pico -> Bridge: r
+2025/08/09 15:03:19 [DEBUG 15:03:19.880] Bridge -> GUI: r
+2025/08/09 15:03:19 [DEBUG 15:03:19.881] Pico -> Bridge: eadyok
+2025/08/09 15:03:19 [DEBUG 15:03:19.881] Bridge -> GUI: eadyok
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] Pico ready timeout - assuming ready
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] Bridge -> GUI: readyok
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] === ISREADY COMPLETE ===
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] GUI -> Bridge: position startpos moves e2e4 c7c5 b1c3 e7e6 g1f3 b8c6 e4e5
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] === OTHER COMMAND: position startpos moves e2e4 c7c5 b1c3 e7e6 g1f3 b8c6 e4e5 ===
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] Bridge -> Pico: position startpos moves e2e4 c7c5 b1c3 e7e6 g1f3 b8c6 e4e5
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:03:20 [DEBUG 15:03:20.870] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:03:21 [DEBUG 15:03:21.061] Pico -> Bridge: estmove
+2025/08/09 15:03:21 [DEBUG 15:03:21.061] Bridge -> GUI: estmove
+2025/08/09 15:03:23 [DEBUG 15:03:23.085] Pico -> Bridge: b
+2025/08/09 15:03:25 [DEBUG 15:03:25.095] Pico -> Bridge: f
+2025/08/09 15:03:25 [DEBUG 15:03:25.095] Bridge -> GUI: f
+2025/08/09 15:03:29 [DEBUG 15:03:29.107] Pico -> Bridge: 7f5
+2025/08/09 15:03:29 [DEBUG 15:03:29.107] Bridge -> GUI: 7f5
+2025/08/09 15:03:50 [DEBUG 15:03:50.872] Go timeout after 30s - sending fallback move
+2025/08/09 15:03:50 [DEBUG 15:03:50.872] Bridge -> GUI: bestmove e2e4
+2025/08/09 15:03:50 [DEBUG 15:03:50.872] === GO COMMAND COMPLETE ===
+2025/08/09 15:04:36 [DEBUG 15:04:36.753] GUI -> Bridge: ucinewgame
+2025/08/09 15:04:36 [DEBUG 15:04:36.753] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:04:36 [DEBUG 15:04:36.753] Bridge -> Pico: ucinewgame
+2025/08/09 15:04:36 [DEBUG 15:04:36.753] GUI -> Bridge: isready
+2025/08/09 15:04:36 [DEBUG 15:04:36.753] === ISREADY CHECK ===
+2025/08/09 15:04:36 [DEBUG 15:04:36.753] Bridge -> Pico: isready
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] Pico ready check completed
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] Bridge -> GUI: readyok
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] === ISREADY COMPLETE ===
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] GUI -> Bridge: position startpos moves b1c3 d7d5 d2d4 g8f6 e2e4
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] === OTHER COMMAND: position startpos moves b1c3 d7d5 d2d4 g8f6 e2e4 ===
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] Bridge -> Pico: position startpos moves b1c3 d7d5 d2d4 g8f6 e2e4
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:04:36 [DEBUG 15:04:36.754] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:04:36 [DEBUG 15:04:36.764] Pico -> Bridge: eadyok
+2025/08/09 15:04:36 [DEBUG 15:04:36.764] Pico -> Bridge: r
+2025/08/09 15:04:36 [DEBUG 15:04:36.764] Bridge -> GUI: r
+2025/08/09 15:04:36 [DEBUG 15:04:36.764] Bridge -> GUI: eadyok
+2025/08/09 15:04:36 [DEBUG 15:04:36.840] Pico -> Bridge: d
+2025/08/09 15:04:36 [DEBUG 15:04:36.840] Bridge -> GUI: d
+2025/08/09 15:04:38 [DEBUG 15:04:38.864] Pico -> Bridge: estmove
+2025/08/09 15:04:38 [DEBUG 15:04:38.864] Bridge -> GUI: estmove
+2025/08/09 15:04:40 [DEBUG 15:04:40.864] Pico -> Bridge: b
+2025/08/09 15:04:40 [DEBUG 15:04:40.864] Bridge -> GUI: b
+2025/08/09 15:04:42 [DEBUG 15:04:42.871] Pico -> Bridge: 5e4
+2025/08/09 15:04:42 [DEBUG 15:04:42.871] Bridge -> GUI: 5e4
+2025/08/09 15:05:06 [DEBUG 15:05:06.755] Go timeout after 30s - sending fallback move
+2025/08/09 15:05:06 [DEBUG 15:05:06.755] Bridge -> GUI: bestmove e2e4
+2025/08/09 15:05:06 [DEBUG 15:05:06.755] === GO COMMAND COMPLETE ===
+2025/08/09 15:07:30 [DEBUG 15:07:30.185] GUI -> Bridge: quit
+2025/08/09 15:07:30 [DEBUG 15:07:30.185] === QUIT COMMAND ===
+2025/08/09 15:07:30 [DEBUG 15:07:30.185] Bridge -> Pico: quit
+2025/08/09 15:07:30 [DEBUG 15:07:30.286] Received quit command, exiting gracefully
+2025/08/09 15:08:10 [DEBUG 15:08:10.626] Config: Log file set to shredder-debug.log
+2025/08/09 15:08:10 [DEBUG 15:08:10.626] Config loaded successfully from: bridge.config
+2025/08/09 15:08:10 [DEBUG 15:08:10.626] Starting UCI Bridge for Pi Pico Chess Engine
+2025/08/09 15:08:10 [DEBUG 15:08:10.626] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:08:10 [DEBUG 15:08:10.626] === CONNECTING TO PICO ===
+2025/08/09 15:08:10 [DEBUG 15:08:10.626] Attempting to connect to COM15 at 115200 baud
+2025/08/09 15:08:10 [DEBUG 15:08:10.626] Connection attempt 1/3
+2025/08/09 15:08:10 [DEBUG 15:08:10.627] Successfully connected to COM15
+2025/08/09 15:08:10 [DEBUG 15:08:10.728] === CONNECTION ESTABLISHED ===
+2025/08/09 15:08:10 [DEBUG 15:08:10.728] UCI Bridge started successfully
+2025/08/09 15:08:10 [DEBUG 15:08:10.728] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:08:10 [DEBUG 15:08:10.728] GUI -> Bridge: uci
+2025/08/09 15:08:10 [DEBUG 15:08:10.728] === UCI INITIALIZATION START ===
+2025/08/09 15:08:10 [DEBUG 15:08:10.728] Bridge -> Pico: uci
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Pico -> Bridge: id name PicoChess
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Pico UCI response: id name PicoChess
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Bridge -> GUI: id name PicoChess
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Bridge -> GUI: id author arnisz
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Bridge -> GUI: option name Skill Level type spin default 10 min 1 max 20
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Bridge -> GUI: option name Move Overhead type spin default 100 min 0 max 1000
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Bridge -> GUI: uciok
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] === UCI INITIALIZATION COMPLETE ===
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] GUI -> Bridge: isready
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] === ISREADY CHECK ===
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Bridge -> Pico: isready
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Pico -> Bridge: id author Arnold
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Pico ready check completed
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] Bridge -> GUI: readyok
+2025/08/09 15:08:10 [DEBUG 15:08:10.729] === ISREADY COMPLETE ===
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] GUI -> Bridge: ucinewgame
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] Bridge -> Pico: ucinewgame
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] GUI -> Bridge: isready
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] === ISREADY CHECK ===
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] Bridge -> Pico: isready
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] Pico -> Bridge: uciok
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] Pico ready check completed
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] Bridge -> GUI: readyok
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] === ISREADY COMPLETE ===
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] GUI -> Bridge: position startpos moves e2e4 c7c5 b1c3 d7d6 d2d4
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] === OTHER COMMAND: position startpos moves e2e4 c7c5 b1c3 d7d6 d2d4 ===
+2025/08/09 15:09:41 [DEBUG 15:09:41.349] Bridge -> Pico: position startpos moves e2e4 c7c5 b1c3 d7d6 d2d4
+2025/08/09 15:09:41 [DEBUG 15:09:41.350] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:09:41 [DEBUG 15:09:41.350] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:09:41 [DEBUG 15:09:41.350] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:09:41 [DEBUG 15:09:41.350] Using timeout: 8s for go command
+2025/08/09 15:09:41 [DEBUG 15:09:41.350] Pico -> Bridge: readyok
+2025/08/09 15:09:41 [DEBUG 15:09:41.350] Bridge -> GUI: readyok
+2025/08/09 15:09:41 [DEBUG 15:09:41.360] Pico -> Bridge: readyok
+2025/08/09 15:09:41 [DEBUG 15:09:41.360] Bridge -> GUI: readyok
+2025/08/09 15:09:41 [DEBUG 15:09:41.475] Pico -> Bridge: bestmove a1a1
+2025/08/09 15:09:41 [DEBUG 15:09:41.475] Bridge -> GUI: bestmove a1a1
+2025/08/09 15:09:41 [DEBUG 15:09:41.475] Received final bestmove: bestmove a1a1
+2025/08/09 15:09:41 [DEBUG 15:09:41.475] Bestmove received successfully
+2025/08/09 15:09:41 [DEBUG 15:09:41.475] === GO COMMAND COMPLETE ===
+2025/08/09 15:10:37 [DEBUG 15:10:37.747] GUI -> Bridge: ucinewgame
+2025/08/09 15:10:37 [DEBUG 15:10:37.747] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:10:37 [DEBUG 15:10:37.747] Bridge -> Pico: ucinewgame
+2025/08/09 15:10:37 [DEBUG 15:10:37.747] GUI -> Bridge: isready
+2025/08/09 15:10:37 [DEBUG 15:10:37.747] === ISREADY CHECK ===
+2025/08/09 15:10:37 [DEBUG 15:10:37.747] Bridge -> Pico: isready
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] Pico -> Bridge: readyok
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] Pico ready check completed
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] Bridge -> GUI: readyok
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] === ISREADY COMPLETE ===
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] GUI -> Bridge: position startpos moves g1f3 d7d5 f3d4
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] === OTHER COMMAND: position startpos moves g1f3 d7d5 f3d4 ===
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] Bridge -> Pico: position startpos moves g1f3 d7d5 f3d4
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:10:37 [DEBUG 15:10:37.748] Using timeout: 8s for go command
+2025/08/09 15:10:37 [DEBUG 15:10:37.826] Pico -> Bridge: bestmove b2b4
+2025/08/09 15:10:37 [DEBUG 15:10:37.826] Bridge -> GUI: bestmove b2b4
+2025/08/09 15:10:37 [DEBUG 15:10:37.826] Received final bestmove: bestmove b2b4
+2025/08/09 15:10:37 [DEBUG 15:10:37.826] Bestmove received successfully
+2025/08/09 15:10:37 [DEBUG 15:10:37.826] === GO COMMAND COMPLETE ===
+2025/08/09 15:11:26 [DEBUG 15:11:26.984] GUI -> Bridge: ucinewgame
+2025/08/09 15:11:26 [DEBUG 15:11:26.985] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:11:26 [DEBUG 15:11:26.985] Bridge -> Pico: ucinewgame
+2025/08/09 15:11:26 [DEBUG 15:11:26.985] GUI -> Bridge: isready
+2025/08/09 15:11:26 [DEBUG 15:11:26.985] === ISREADY CHECK ===
+2025/08/09 15:11:26 [DEBUG 15:11:26.985] Bridge -> Pico: isready
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] Pico -> Bridge: readyok
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] Pico ready check completed
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] Bridge -> GUI: readyok
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] === ISREADY COMPLETE ===
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] GUI -> Bridge: position startpos moves e2e4 c7c5 g1f3 d7d6 d2d3 b8c6 b1c3
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] === OTHER COMMAND: position startpos moves e2e4 c7c5 g1f3 d7d6 d2d3 b8c6 b1c3 ===
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] Bridge -> Pico: position startpos moves e2e4 c7c5 g1f3 d7d6 d2d3 b8c6 b1c3
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:11:26 [DEBUG 15:11:26.986] Using timeout: 8s for go command
+2025/08/09 15:11:27 [DEBUG 15:11:27.075] Pico -> Bridge: bestmove a1a1
+2025/08/09 15:11:27 [DEBUG 15:11:27.075] Bridge -> GUI: bestmove a1a1
+2025/08/09 15:11:27 [DEBUG 15:11:27.075] Received final bestmove: bestmove a1a1
+2025/08/09 15:11:27 [DEBUG 15:11:27.075] Bestmove received successfully
+2025/08/09 15:11:27 [DEBUG 15:11:27.075] === GO COMMAND COMPLETE ===
+2025/08/09 15:12:35 [DEBUG 15:12:35.893] GUI -> Bridge: quit
+2025/08/09 15:12:35 [DEBUG 15:12:35.893] === QUIT COMMAND ===
+2025/08/09 15:12:35 [DEBUG 15:12:35.893] Bridge -> Pico: quit
+2025/08/09 15:12:35 [DEBUG 15:12:35.994] Received quit command, exiting gracefully
+2025/08/09 15:12:55 [DEBUG 15:12:55.241] Config: Log file set to shredder-debug.log
+2025/08/09 15:12:55 [DEBUG 15:12:55.242] Config loaded successfully from: bridge.config
+2025/08/09 15:12:55 [DEBUG 15:12:55.242] Starting UCI Bridge for Pi Pico Chess Engine
+2025/08/09 15:12:55 [DEBUG 15:12:55.242] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:12:55 [DEBUG 15:12:55.242] === CONNECTING TO PICO ===
+2025/08/09 15:12:55 [DEBUG 15:12:55.242] Attempting to connect to COM15 at 115200 baud
+2025/08/09 15:12:55 [DEBUG 15:12:55.242] Connection attempt 1/3
+2025/08/09 15:12:55 [DEBUG 15:12:55.243] Successfully connected to COM15
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] === CONNECTION ESTABLISHED ===
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] UCI Bridge started successfully
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] GUI -> Bridge: uci
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] === UCI INITIALIZATION START ===
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] Bridge -> Pico: uci
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] Pico -> Bridge: id name PicoChess
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] Pico UCI response: id name PicoChess
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] Bridge -> GUI: id name PicoChess
+2025/08/09 15:12:55 [DEBUG 15:12:55.344] Bridge -> GUI: id author arnisz
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] Bridge -> GUI: option name Skill Level type spin default 10 min 1 max 20
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] Bridge -> GUI: option name Move Overhead type spin default 100 min 0 max 1000
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] Bridge -> GUI: uciok
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] === UCI INITIALIZATION COMPLETE ===
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] GUI -> Bridge: isready
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] === ISREADY CHECK ===
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] Bridge -> Pico: isready
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] Pico -> Bridge: id author Arnold
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] Pico ready check completed
+2025/08/09 15:12:55 [DEBUG 15:12:55.345] Bridge -> GUI: readyok
+2025/08/09 15:12:55 [DEBUG 15:12:55.346] === ISREADY COMPLETE ===
+2025/08/09 15:13:24 [DEBUG 15:13:24.400] GUI -> Bridge: ucinewgame
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Bridge -> Pico: ucinewgame
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] GUI -> Bridge: isready
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] === ISREADY CHECK ===
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Bridge -> Pico: isready
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Pico -> Bridge: uciok
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Pico ready check completed
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Bridge -> GUI: readyok
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] === ISREADY COMPLETE ===
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] GUI -> Bridge: position startpos moves e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 c1g5
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] === OTHER COMMAND: position startpos moves e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 c1g5 ===
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Bridge -> Pico: position startpos moves e2e4 e7e5 g1f3 b8c6 d2d4 e5d4 f3d4 g8f6 c1g5
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Using timeout: 8s for go command
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Pico -> Bridge: readyok
+2025/08/09 15:13:24 [DEBUG 15:13:24.401] Bridge -> GUI: readyok
+2025/08/09 15:13:24 [DEBUG 15:13:24.412] Pico -> Bridge: readyok
+2025/08/09 15:13:24 [DEBUG 15:13:24.412] Bridge -> GUI: readyok
+2025/08/09 15:13:24 [DEBUG 15:13:24.777] Pico -> Bridge: s
+2025/08/09 15:13:24 [DEBUG 15:13:24.777] Bridge -> GUI: s
+2025/08/09 15:13:26 [DEBUG 15:13:26.859] Pico -> Bridge: bo e
+2025/08/09 15:13:26 [DEBUG 15:13:26.860] Bridge -> GUI: bo e
+2025/08/09 15:13:26 [DEBUG 15:13:26.969] Pico -> Bridge: etmvef64
+2025/08/09 15:13:26 [DEBUG 15:13:26.969] Bridge -> GUI: etmvef64
+2025/08/09 15:13:32 [DEBUG 15:13:32.401] Go timeout after 8s - sending fallback move
+2025/08/09 15:13:32 [DEBUG 15:13:32.401] Bridge -> GUI: bestmove e2e4
+2025/08/09 15:13:32 [DEBUG 15:13:32.401] === GO COMMAND COMPLETE ===
+2025/08/09 15:17:29 [DEBUG 15:17:29.658] GUI -> Bridge: quit
+2025/08/09 15:17:29 [DEBUG 15:17:29.658] === QUIT COMMAND ===
+2025/08/09 15:17:29 [DEBUG 15:17:29.658] Bridge -> Pico: quit
+2025/08/09 15:17:29 [DEBUG 15:17:29.759] Received quit command, exiting gracefully
+2025/08/09 15:25:24 [DEBUG 15:25:24.966] Config: Log file set to shredder-debug.log
+2025/08/09 15:25:24 [DEBUG 15:25:24.966] Config loaded successfully from: bridge.config
+2025/08/09 15:25:24 [DEBUG 15:25:24.966] Starting UCI Bridge for Pi Pico Chess Engine
+2025/08/09 15:25:24 [DEBUG 15:25:24.966] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:25:24 [DEBUG 15:25:24.966] === CONNECTING TO PICO ===
+2025/08/09 15:25:24 [DEBUG 15:25:24.966] Attempting to connect to COM15 at 115200 baud
+2025/08/09 15:25:24 [DEBUG 15:25:24.966] Connection attempt 1/3
+2025/08/09 15:25:24 [DEBUG 15:25:24.966] Attempt 1 failed: Serial port busy
+2025/08/09 15:25:25 [DEBUG 15:25:25.167] Connection attempt 2/3
+2025/08/09 15:25:25 [DEBUG 15:25:25.167] Attempt 2 failed: Serial port busy
+2025/08/09 15:25:25 [DEBUG 15:25:25.367] Connection attempt 3/3
+2025/08/09 15:25:25 [DEBUG 15:25:25.367] Attempt 3 failed: Serial port busy
+2025/08/09 15:25:25 [ERROR 15:25:25.568] Failed to connect after 3 attempts: Serial port busy
+2025/08/09 15:25:25 [ERROR 15:25:25.568] Connection failed: failed to connect to COM15: Serial port busy
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] WARNING: Continuing without Pi Pico connection - using fallback responses
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] UCI Bridge started successfully
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] GUI -> Bridge: uci
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] === UCI INITIALIZATION START ===
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] Failed to send UCI to Pico: serial port not connected
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] Bridge -> GUI: id name PicoChess
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] Bridge -> GUI: id author arnisz
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] Bridge -> GUI: option name Skill Level type spin default 10 min 1 max 20
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] Bridge -> GUI: option name Move Overhead type spin default 100 min 0 max 1000
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] Bridge -> GUI: uciok
+2025/08/09 15:25:25 [DEBUG 15:25:25.568] === UCI INITIALIZATION COMPLETE ===
+2025/08/09 15:25:25 [DEBUG 15:25:25.769] GUI -> Bridge: isready
+2025/08/09 15:25:25 [DEBUG 15:25:25.769] === ISREADY CHECK ===
+2025/08/09 15:25:25 [DEBUG 15:25:25.869] Failed to send isready: serial port not connected
+2025/08/09 15:25:25 [DEBUG 15:25:25.869] Bridge -> GUI: readyok
+2025/08/09 15:25:25 [DEBUG 15:25:25.869] === ISREADY COMPLETE ===
+2025/08/09 15:26:03 [DEBUG 15:26:03.413] GUI -> Bridge: ucinewgame
+2025/08/09 15:26:03 [DEBUG 15:26:03.413] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:26:03 [DEBUG 15:26:03.463] Failed to send command ucinewgame: serial port not connected
+2025/08/09 15:26:03 [DEBUG 15:26:03.463] GUI -> Bridge: isready
+2025/08/09 15:26:03 [DEBUG 15:26:03.463] === ISREADY CHECK ===
+2025/08/09 15:26:03 [DEBUG 15:26:03.564] Failed to send isready: serial port not connected
+2025/08/09 15:26:03 [DEBUG 15:26:03.564] Bridge -> GUI: readyok
+2025/08/09 15:26:03 [DEBUG 15:26:03.564] === ISREADY COMPLETE ===
+2025/08/09 15:26:03 [DEBUG 15:26:03.664] GUI -> Bridge: position startpos moves e2e4 c7c5 b1c3 e7e6 g1f3 b8c6 f1c4
+2025/08/09 15:26:03 [DEBUG 15:26:03.664] === OTHER COMMAND: position startpos moves e2e4 c7c5 b1c3 e7e6 g1f3 b8c6 f1c4 ===
+2025/08/09 15:26:03 [DEBUG 15:26:03.715] Failed to send command position startpos moves e2e4 c7c5 b1c3 e7e6 g1f3 b8c6 f1c4: serial port not connected
+2025/08/09 15:26:03 [DEBUG 15:26:03.715] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:26:03 [DEBUG 15:26:03.715] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:26:03 [ERROR 15:26:03.715] Failed to send go command: serial port not connected
+2025/08/09 15:26:03 [DEBUG 15:26:03.715] Bridge -> GUI: bestmove e2e4
+2025/08/09 15:26:24 [DEBUG 15:26:24.671] GUI -> Bridge: quit
+2025/08/09 15:26:24 [DEBUG 15:26:24.672] === QUIT COMMAND ===
+2025/08/09 15:26:24 [DEBUG 15:26:24.672] Received quit command, exiting gracefully
+2025/08/09 15:26:37 [DEBUG 15:26:37.788] Config: Log file set to shredder-debug.log
+2025/08/09 15:26:37 [DEBUG 15:26:37.789] Config loaded successfully from: bridge.config
+2025/08/09 15:26:37 [DEBUG 15:26:37.789] Starting UCI Bridge for Pi Pico Chess Engine
+2025/08/09 15:26:37 [DEBUG 15:26:37.789] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:26:37 [DEBUG 15:26:37.789] === CONNECTING TO PICO ===
+2025/08/09 15:26:37 [DEBUG 15:26:37.789] Attempting to connect to COM15 at 115200 baud
+2025/08/09 15:26:37 [DEBUG 15:26:37.789] Connection attempt 1/3
+2025/08/09 15:26:37 [DEBUG 15:26:37.790] Successfully connected to COM15
+2025/08/09 15:26:37 [DEBUG 15:26:37.890] === CONNECTION ESTABLISHED ===
+2025/08/09 15:26:37 [DEBUG 15:26:37.890] UCI Bridge started successfully
+2025/08/09 15:26:37 [DEBUG 15:26:37.890] Configuration: Port=COM15, Baud=115200, Timeout=3s, Debug=true
+2025/08/09 15:26:37 [DEBUG 15:26:37.890] GUI -> Bridge: uci
+2025/08/09 15:26:37 [DEBUG 15:26:37.890] === UCI INITIALIZATION START ===
+2025/08/09 15:26:37 [DEBUG 15:26:37.890] Bridge -> Pico: uci
+2025/08/09 15:26:37 [DEBUG 15:26:37.890] Waiting for complete UCI response from Pico...
+2025/08/09 15:26:37 [DEBUG 15:26:37.891] Pico -> Bridge: id name PicoChess
+2025/08/09 15:26:37 [DEBUG 15:26:37.891] UCI response from Pico: id name PicoChess
+2025/08/09 15:26:37 [DEBUG 15:26:37.941] Pico -> Bridge: id author Arnold
+2025/08/09 15:26:37 [DEBUG 15:26:37.941] UCI response from Pico: id author Arnold
+2025/08/09 15:26:37 [DEBUG 15:26:37.991] Pico -> Bridge: uciok
+2025/08/09 15:26:37 [DEBUG 15:26:37.991] UCI response from Pico: uciok
+2025/08/09 15:26:37 [DEBUG 15:26:37.991] Received uciok from Pico - UCI sequence complete
+2025/08/09 15:26:38 [DEBUG 15:26:38.042] Bridge -> GUI: id name PicoChess
+2025/08/09 15:26:38 [DEBUG 15:26:38.042] Bridge -> GUI: id author arnisz
+2025/08/09 15:26:38 [DEBUG 15:26:38.042] Bridge -> GUI: option name Skill Level type spin default 10 min 1 max 20
+2025/08/09 15:26:38 [DEBUG 15:26:38.042] Bridge -> GUI: option name Move Overhead type spin default 100 min 0 max 1000
+2025/08/09 15:26:38 [DEBUG 15:26:38.042] Bridge -> GUI: uciok
+2025/08/09 15:26:38 [DEBUG 15:26:38.042] === UCI INITIALIZATION COMPLETE ===
+2025/08/09 15:26:38 [DEBUG 15:26:38.242] GUI -> Bridge: isready
+2025/08/09 15:26:38 [DEBUG 15:26:38.242] === ISREADY CHECK ===
+2025/08/09 15:26:38 [DEBUG 15:26:38.343] Bridge -> Pico: isready
+2025/08/09 15:26:38 [DEBUG 15:26:38.343] Pico -> Bridge: readyok
+2025/08/09 15:26:38 [DEBUG 15:26:38.343] Isready response from Pico: readyok
+2025/08/09 15:26:38 [DEBUG 15:26:38.343] Received correct readyok from Pico
+2025/08/09 15:26:38 [DEBUG 15:26:38.343] Bridge -> GUI: readyok
+2025/08/09 15:26:38 [DEBUG 15:26:38.343] === ISREADY COMPLETE ===
+2025/08/09 15:27:06 [DEBUG 15:27:06.607] GUI -> Bridge: ucinewgame
+2025/08/09 15:27:06 [DEBUG 15:27:06.608] === OTHER COMMAND: ucinewgame ===
+2025/08/09 15:27:06 [DEBUG 15:27:06.658] Bridge -> Pico: ucinewgame
+2025/08/09 15:27:06 [DEBUG 15:27:06.658] Command sent, no response expected
+2025/08/09 15:27:06 [DEBUG 15:27:06.708] GUI -> Bridge: isready
+2025/08/09 15:27:06 [DEBUG 15:27:06.708] === ISREADY CHECK ===
+2025/08/09 15:27:06 [DEBUG 15:27:06.809] Bridge -> Pico: isready
+2025/08/09 15:27:06 [DEBUG 15:27:06.809] Pico -> Bridge: readyok
+2025/08/09 15:27:06 [DEBUG 15:27:06.809] Isready response from Pico: readyok
+2025/08/09 15:27:06 [DEBUG 15:27:06.809] Received correct readyok from Pico
+2025/08/09 15:27:06 [DEBUG 15:27:06.809] Bridge -> GUI: readyok
+2025/08/09 15:27:06 [DEBUG 15:27:06.809] === ISREADY COMPLETE ===
+2025/08/09 15:27:06 [DEBUG 15:27:06.910] GUI -> Bridge: position startpos moves e2e4 c7c5 b1c3 d7d6 g1f3 a7a6 b2b3
+2025/08/09 15:27:06 [DEBUG 15:27:06.910] === OTHER COMMAND: position startpos moves e2e4 c7c5 b1c3 d7d6 g1f3 a7a6 b2b3 ===
+2025/08/09 15:27:06 [DEBUG 15:27:06.960] Bridge -> Pico: position startpos moves e2e4 c7c5 b1c3 d7d6 g1f3 a7a6 b2b3
+2025/08/09 15:27:06 [DEBUG 15:27:06.960] Command sent, no response expected
+2025/08/09 15:27:07 [DEBUG 15:27:07.010] GUI -> Bridge: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:27:07 [DEBUG 15:27:07.010] === GO COMMAND: go movestogo 60 wtime 60000 btime 60000 ===
+2025/08/09 15:27:07 [DEBUG 15:27:07.010] Bridge -> Pico: go movestogo 60 wtime 60000 btime 60000
+2025/08/09 15:27:07 [DEBUG 15:27:07.010] Using timeout: 8s for go command
+2025/08/09 15:27:07 [DEBUG 15:27:07.083] Pico -> Bridge: bestmove a1a1
+2025/08/09 15:27:07 [DEBUG 15:27:07.083] Bridge -> GUI: bestmove a1a1
+2025/08/09 15:27:07 [DEBUG 15:27:07.083] Received final bestmove: bestmove a1a1
+2025/08/09 15:27:07 [DEBUG 15:27:07.083] Bestmove received successfully
+2025/08/09 15:27:07 [DEBUG 15:27:07.083] === GO COMMAND COMPLETE ===
+2025/08/09 15:32:30 [DEBUG 15:32:30.758] GUI -> Bridge: quit
+2025/08/09 15:32:30 [DEBUG 15:32:30.758] === QUIT COMMAND ===
+2025/08/09 15:32:30 [DEBUG 15:32:30.758] Bridge -> Pico: quit
+2025/08/09 15:32:30 [DEBUG 15:32:30.859] Received quit command, exiting gracefully
