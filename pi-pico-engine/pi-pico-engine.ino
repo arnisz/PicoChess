@@ -182,9 +182,20 @@ bool sqAttacked(int sq, int bySide){
 Hist hist[MAX_PLY];
 
 bool makeMove(const Move&m){
-  Hist &h = hist[histPly++]; 
-  h.cap = board[m.to];
-  h.pcs = board[m.from];
+  // validate source and target squares before making any changes
+  int moving = board[m.from];
+  int target = board[m.to];
+
+  // source square must contain a piece of the side to move
+  if(moving == EMPTY) return false;
+  if((side == 1 && moving < 0) || (side == -1 && moving > 0)) return false;
+
+  // destination must be empty or contain an enemy piece
+  if(target != EMPTY && ((target > 0) == (moving > 0))) return false;
+
+  Hist &h = hist[histPly++];
+  h.cap = target;
+  h.pcs = moving;
   h.oldCastle=castle; h.oldEp=ep_sq; h.oldHalf=halfmove; h.oldKingW=kingSq[0]; h.oldKingB=kingSq[1];
 
   ep_sq = -1;
