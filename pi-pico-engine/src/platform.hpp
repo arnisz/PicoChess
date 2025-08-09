@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef ARDUINO_ENV
+#ifdef ARDUINO
   #ifndef MOCK_ARDUINO
     #include <Arduino.h>
   #endif
