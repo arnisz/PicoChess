@@ -6,6 +6,7 @@
   #endif
   #define PLATFORM_PRINT(x) Serial.println(x)
   #define PLATFORM_DELAY(x) delay(x)
+  inline uint32_t platformMillis(){ return millis(); }
 #else
   #include <iostream>
   #include <chrono>
@@ -29,6 +30,11 @@
   };
   #define PLATFORM_PRINT(x) std::cout << x << std::endl
   #define PLATFORM_DELAY(x) std::this_thread::sleep_for(std::chrono::milliseconds(x))
+  inline uint32_t platformMillis(){
+    using namespace std::chrono;
+    static auto start = steady_clock::now();
+    return duration_cast<milliseconds>(steady_clock::now()-start).count();
+  }
 #endif
 
 #ifdef DEBUG_MODE
