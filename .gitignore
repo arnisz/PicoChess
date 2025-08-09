@@ -24,3 +24,29 @@ Thumbs.db
 .vscode/
 *.swp
 .idea/
+# Build artefacts
+*.uf2
+*.bin
+*.hex
+*.elf
+*.map
+*.o
+*.obj
+*.d
+*.a
+*.lib
+
+# Arduino/IDE
+*.log
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Python bridge artefacts
+__pycache__/
+*.pyc
+dist/
+build/
+*.spec
