@@ -244,18 +244,18 @@ bool makeMove(const Move&m){
   if(m.from==idx(0,7)||m.to==idx(0,7)) castle&=~BQC;
   if(m.from==idx(7,7)||m.to==idx(7,7)) castle&=~BKC;
 
-  side = -side;
+  int us = side;          // side that just moved
+  side = -side;           // switch side to move to the opponent
+  int kingSqUs = (us==1 ? kingSq[0] : kingSq[1]);
+
   // legality: own king must not be in check
-  int ksq = (side==1? kingSq[1]: kingSq[0]); // the side that moved: check its king before side flip? adjust:
-  // after flip, opponent to move; we need to ensure previous mover's king (now opposite side) is safe:
-  int checkSq = (side==-1? kingSq[0] : kingSq[1]);
-  if(sqAttacked(checkSq, side)){ // attacked by side to move -> illegal
-    // unmake
-    side = -side;
+  if(sqAttacked(kingSqUs, side)) {
+    // unmake the move because it leaves our king in check
+    side = us; // restore side
     board[m.from]=h.pcs; board[m.to]=h.cap;
     if(h.pcs==WK) kingSq[0]=h.oldKingW;
     if(h.pcs==BK) kingSq[1]=h.oldKingB;
-    // undo special
+    // undo special pieces
     if(m.flags==2){
       if(h.pcs==WK){
         if(m.to==idx(6,0)){ board[idx(7,0)]=WR; board[idx(5,0)]=EMPTY; }
@@ -266,7 +266,7 @@ bool makeMove(const Move&m){
       }
     }
     if(m.flags==3){
-      if(side==1){ // we had flipped earlier
+      if(us==1){
         board[m.to+16]=BP;
       }else{
         board[m.to-16]=WP;
@@ -494,6 +494,18 @@ Move think(int depth){
       unmakeMove(m);
       if(sc>bestScore){ bestScore=sc; best=m; }
       if(sc>alpha){ alpha=sc; }
+    }
+  }
+  if(best.from==0 && best.to==0){
+    // Fallback: pick the first legal move if search failed to find one
+    genMoves();
+    for(int i=0;i<movecount;i++){
+      Move m=movelist[i];
+      if(makeMove(m)){
+        unmakeMove(m);
+        best=m;
+        break;
+      }
     }
   }
   return best;
